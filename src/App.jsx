@@ -56,7 +56,7 @@ const initialPlayers = [
   { name: 'J. Oosterwolde', positions: ['SLB', 'STP'], ovr: 76, pot: 83 },
   { name: 'J. Svensson', positions: ['SĞB'], ovr: 76, pot: 76 },
   { name: 'A. Oxlade-Chamberlain', positions: ['MO', 'MOO'], ovr: 76, pot: 76 },
-  { name: 'M. Rashica', positions: ['SĞO', 'SLO'], ovr: 76, pot: 76 }
+  { name: 'M. Rashica', positions: ['SĞO', 'SLO'], ovr: 76, pot: 76 },
   { name: 'F. Uduokhai', positions: ['STP'], ovr: 76, pot: 79 },
   { name: 'O. Yokuşlu', positions: ['MDO', 'MO'], ovr: 76, pot: 76 },
   { name: 'A. Nwakaeme', positions: ['SLO', 'ST'], ovr: 76, pot: 76 },
@@ -106,7 +106,7 @@ const initialPlayers = [
   { name: 'O. Ba', positions: ['STP', 'SLB'], ovr: 73, pot: 74 },
   { name: 'M. Lis', positions: ['KL'], ovr: 73, pot: 76 },
   { name: 'C. Højer', positions: ['SLB'], ovr: 73, pot: 73 },
-  { name: 'I. Grbić', positions: ['KL'], ovr: 73, pot: 73 }
+  { name: 'I. Grbić', positions: ['KL'], ovr: 73, pot: 73 },
   { name: 'T. Ciğerci', positions: ['MDO'], ovr: 73, pot: 73 },
   { name: 'B. Ndiaye', positions: ['MO', 'MDO'], ovr: 73, pot: 73 },
   { name: 'D. Okereke', positions: ['ST', 'SĞK', 'SLK'], ovr: 73, pot: 74 },
@@ -156,7 +156,7 @@ const initialPlayers = [
   { name: 'S. Moutoussamy', positions: ['MO', 'MDO'], ovr: 71, pot: 71 },
   { name: 'K. Kodro', positions: ['ST'], ovr: 71, pot: 71 },
   { name: 'D. Sorescu', positions: ['SĞO', 'SĞB'], ovr: 71, pot: 71 },
-  { name: 'A. Kara', positions: ['MO', 'MDO'], ovr: 71, pot: 71 }
+  { name: 'A. Kara', positions: ['MO', 'MDO'], ovr: 71, pot: 71 },
   { name: 'M. Fall', positions: ['ST', 'SĞO'], ovr: 71, pot: 71 },
   { name: 'A. Šporar', positions: ['ST'], ovr: 71, pot: 71 },
   { name: 'J. Balkovec', positions: ['SLB', 'STP'], ovr: 71, pot: 71 },
@@ -206,7 +206,7 @@ const initialPlayers = [
   { name: 'K. Yılmaz', positions: ['MDO', 'MO'], ovr: 69, pot: 74 },
   { name: 'B. Boutobba', positions: ['SĞO', 'SĞK', 'ST'], ovr: 69, pot: 70 },
   { name: 'G. Sağlam', positions: ['MDO', 'MO', 'MOO'], ovr: 69, pot: 72 },
-  { name: 'F. Bamgboye', positions: ['SĞO', 'SĞK', 'SLO'], ovr: 69, pot: 70 }
+  { name: 'F. Bamgboye', positions: ['SĞO', 'SĞK', 'SLO'], ovr: 69, pot: 70 },
   { name: 'H. Keyta', positions: ['SLK', 'ST', 'MOO'], ovr: 69, pot: 69 },
   { name: 'M. Jevtović', positions: ['MDO', 'MO'], ovr: 69, pot: 69 },
   { name: 'L. Prip', positions: ['SĞK', 'SĞO'], ovr: 69, pot: 69 },
@@ -266,7 +266,7 @@ const initialPlayers = [
   { name: 'I. Brnić', positions: ['SĞO', 'SLO'], ovr: 67, pot: 74 },
   { name: 'O. Ergün', positions: ['MDO', 'MO'], ovr: 67, pot: 67 },
   { name: 'D. Nazon', positions: ['ST'], ovr: 67, pot: 67 },
-  { name: 'Héliton', positions: ['STP'], ovr: 67, pot: 67 }
+  { name: 'Héliton', positions: ['STP'], ovr: 67, pot: 67 },
   { name: 'A. Dennis', positions: ['MDO', 'MO'], ovr: 67, pot: 75 },
   { name: 'O. Bayrak', positions: ['SĞB', 'SĞO'], ovr: 67, pot: 70 },
   { name: 'Victor Hugo', positions: ['MO', 'MOO', 'MDO'], ovr: 67, pot: 77 },
@@ -331,7 +331,7 @@ const initialPlayers = [
   { name: 'O. Özçiçek', positions: ['MO', 'MDO'], ovr: 66, pot: 69 },
   { name: 'S. Çiftpınar', positions: ['STP'], ovr: 66, pot: 66 },
   { name: 'N. Opoku', positions: ['STP'], ovr: 66, pot: 69 },
-  { name: 'S. Córdova', positions: ['ST', 'MOO'], ovr: 66, pot: 67 }
+  { name: 'S. Córdova', positions: ['ST', 'MOO'], ovr: 66, pot: 67 },
   { name: 'L. Augusto', positions: ['SĞB', 'SĞO'], ovr: 66, pot: 71 },
   { name: 'R. Yalçın', positions: ['STP', 'SĞB', 'MDO'], ovr: 66, pot: 66 },
   { name: 'Z. Dimitrov', positions: ['SLO', 'SLK'], ovr: 66, pot: 67 },
@@ -406,7 +406,7 @@ const initialPlayers = [
   { name: 'J. Biegański', positions: ['MDO'], ovr: 62, pot: 70 },
   { name: 'B. Luş', positions: ['SLK', 'SLO'], ovr: 61, pot: 82 },
   { name: 'É. Ricardo', positions: ['MO', 'MDO'], ovr: 61, pot: 75 },
-  { name: 'B. Fougeu', positions: ['ST'], ovr: 61, pot: 70 }
+  { name: 'B. Fougeu', positions: ['ST'], ovr: 61, pot: 70 },
   { name: 'A. Aymbetov', positions: ['ST'], ovr: 61, pot: 61 },
   { name: 'T. Aydoğan', positions: ['MO', 'MOO'], ovr: 61, pot: 61 },
   { name: 'A. Kurtulan', positions: ['SĞB', 'SĞO'], ovr: 61, pot: 69 },
@@ -450,7 +450,7 @@ const initialPlayers = [
   { name: 'O. Demirbağ', positions: ['SLK', 'SĞK', 'ST'], ovr: 57, pot: 74 },
   { name: 'O. Kaynak', positions: ['SĞK', 'SLO'], ovr: 57, pot: 72 },
   { name: 'E. Gökçek', positions: ['SĞB'], ovr: 57, pot: 72 },
-  { name: 'S. Temel', positions: ['MDO', 'MO'], ovr: 57, pot: 63 }
+  { name: 'S. Temel', positions: ['MDO', 'MO'], ovr: 57, pot: 63 },
   { name: 'M. Buljubašić', positions: ['MO', 'MDO'], ovr: 57, pot: 66 },
   { name: 'V. Simić', positions: ['SĞO', 'SLO'], ovr: 57, pot: 57 },
   { name: 'E. Keskin', positions: ['MO', 'MDO'], ovr: 57, pot: 63 },
