@@ -535,7 +535,7 @@ export default function App() {
       const isGK = player.positions.includes('KL');
       const isST = player.positions.includes('ST');
       const baseScore = (player.ovr ** 2) * 0.18 + player.pot * 1.05;
-      const bonus = isST ? 8 : isGK ? 1 : 0;
+      const bonus = isST ? 8 : isGK ? 5 : 0;
       const randomness = Math.random() * (player.ovr > 84 ? 2 : 10);
       const positionFactor = match ? 1 : 0.85;
       const score = (baseScore + bonus + randomness) * positionFactor;
