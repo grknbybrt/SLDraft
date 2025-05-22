@@ -1,5 +1,3 @@
-MAY 22, 2025 live working version
-
 import React, { useState, useRef } from 'react';
 
 const teams = [
