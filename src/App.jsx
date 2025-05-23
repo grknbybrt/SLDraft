@@ -495,6 +495,7 @@ const initialPlayers = [
   { name: 'B. Tetik', positions: ['KL'], ovr: 51, pot: 52 },
   { name: 'A. Üresin', positions: ['SĞB'], ovr: 50, pot: 58 },
   { name: 'M. Bayram', positions: ['KL'], ovr: 50, pot: 66 },
+
 ];
 
 const formationNeeds = [
