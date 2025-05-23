@@ -631,7 +631,7 @@ return (
             onClick={handleNextPick}
             className="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700"
           >
-            Next Pick
+            Sıradaki Seçim
           </button>
           <span className="text-lg font-medium bg-red-600 text-white px-2 py-1 rounded">
             <strong>{currentTeam}</strong> - Round {currentRound}, Pick {currentPickInRound}
@@ -642,14 +642,14 @@ return (
           onChange={(e) => setDraftType(e.target.value)}
           className={`border px-2 py-1 rounded shadow text-sm ${darkMode ? 'bg-gray-800 text-white border-gray-600' : 'bg-white text-black border-gray-300'}`}
         >
-          <option value="snake">Snake</option>
+          <option value="snake">Yılan</option>
           <option value="random">Random</option>
-          <option value="fair">Fairest</option>
+          <option value="fair">Adil</option>
         </select>
       </div>
 
       <div className="mb-6">
-        <h2 className="text-lg font-semibold mb-2">Draft Order</h2>
+        <h2 className="text-lg font-semibold mb-2">Draft Sırası</h2>
         <div className="flex flex-wrap justify-center gap-2">
           {pickOrder.map((team, index) => (
             <div
@@ -663,7 +663,7 @@ return (
       </div>
 
      <div className="mb-6">
-      <h2 className="text-xl font-semibold mb-2">Available Players</h2>
+      <h2 className="text-xl font-semibold mb-2">Oyuncu Havuzu</h2>
       <div className="max-h-64 overflow-y-auto border border-gray-400 rounded p-2 bg-gray-200 dark:bg-gray-700 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2">
         {availablePlayers.map((p, idx) => (
           <div key={idx} className={`p-2 rounded border border-gray-300 hover:shadow-md transition-shadow duration-200 ${darkMode ? 'bg-gray-800 text-white hover:bg-gray-700' : 'bg-gray-100 text-black hover:bg-gray-200'}`}>
