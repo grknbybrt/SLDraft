@@ -616,7 +616,7 @@ export default function App() {
 return (
   <div className={`p-6 font-sans min-h-screen ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl font-bold">Süper Lig Draft Simulator</h1>
+        <h1 className="text-3xl font-bold">GRKN Süper Lig Draft Simulatorü</h1>
         <button
           onClick={() => setDarkMode(!darkMode)}
           className="px-3 py-1 border rounded text-sm shadow hover:bg-gray-200 dark:hover:bg-gray-800"
