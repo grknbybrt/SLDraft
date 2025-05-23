@@ -690,7 +690,7 @@ return (
 
       {showPopup && lastPickedPlayer && (
         <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-green-500 text-white text-center px-6 py-4 rounded-lg shadow-lg animate-bounceFade">
-          <p className="font-bold text-xl">{lastPickedPlayer.team} selected {lastPickedPlayer.name}</p>
+          <p className="font-bold text-xl">{lastPickedPlayer.team}{lastPickedPlayer.name} seçti!</p>
           <p className="text-sm mt-1">{lastPickedPlayer.positions.join(" / ")} ({lastPickedPlayer.ovr}/{lastPickedPlayer.pot})</p>
         </div>
       )}
