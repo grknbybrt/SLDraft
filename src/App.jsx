@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 const teams = [
   "Alanyaspor", "Antalyaspor", "Sivasspor", "Samsunspor", "Eyüpspor", "Çaykur Rizespor", "Kayserispor",
@@ -503,9 +503,18 @@ const formationNeeds = [
 ];
 
 export default function App() {
-  const [rosters, setRosters] = useState(Object.fromEntries([...teams].sort().map(team => [team, []])));
-  const [currentPickIndex, setCurrentPickIndex] = useState(0);
-  const [availablePlayers, setAvailablePlayers] = useState(initialPlayers);
+  const [rosters, setRosters] = useState(() => {
+    const saved = localStorage.getItem("rosters");
+    return saved ? JSON.parse(saved) : Object.fromEntries([...teams].sort().map(team => [team, []]));
+  });
+  const [currentPickIndex, setCurrentPickIndex] = useState(() => {
+    const saved = localStorage.getItem("currentPickIndex");
+    return saved ? JSON.parse(saved) : 0;
+  });
+  const [availablePlayers, setAvailablePlayers] = useState(() => {
+    const saved = localStorage.getItem("availablePlayers");
+    return saved ? JSON.parse(saved) : initialPlayers;
+  });
   const [lastPickedPlayer, setLastPickedPlayer] = useState(null);
   const [showPopup, setShowPopup] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
@@ -514,7 +523,7 @@ export default function App() {
   const [draftType, setDraftType] = useState('snake');
   const popupTimeoutRef = useRef(null);
 
- useEffect(() => {
+  useEffect(() => {
     localStorage.setItem("rosters", JSON.stringify(rosters));
     localStorage.setItem("currentPickIndex", JSON.stringify(currentPickIndex));
     localStorage.setItem("availablePlayers", JSON.stringify(availablePlayers));
