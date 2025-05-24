@@ -514,6 +514,12 @@ export default function App() {
   const [draftType, setDraftType] = useState('snake');
   const popupTimeoutRef = useRef(null);
 
+ useEffect(() => {
+    localStorage.setItem("rosters", JSON.stringify(rosters));
+    localStorage.setItem("currentPickIndex", JSON.stringify(currentPickIndex));
+    localStorage.setItem("availablePlayers", JSON.stringify(availablePlayers));
+  }, [rosters, currentPickIndex, availablePlayers]);
+
   const currentRound = Math.floor(currentPickIndex / pickOrder.length) + 1;
   const currentPickInRound = (currentPickIndex % pickOrder.length) + 1;
   const currentTeam = pickOrder[currentPickIndex % pickOrder.length];
@@ -690,7 +696,7 @@ return (
 
       {showPopup && lastPickedPlayer && (
         <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-green-500 text-white text-center px-6 py-4 rounded-lg shadow-lg animate-bounceFade">
-          <p className="font-bold text-xl">{lastPickedPlayer.team}{lastPickedPlayer.name} seçti!</p>
+          <p className="font-bold text-xl">{lastPickedPlayer.team} {lastPickedPlayer.name} seçti!</p>
           <p className="text-sm mt-1">{lastPickedPlayer.positions.join(" / ")} ({lastPickedPlayer.ovr}/{lastPickedPlayer.pot})</p>
         </div>
       )}
